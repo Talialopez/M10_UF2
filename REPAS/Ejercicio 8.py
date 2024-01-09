@@ -1,0 +1,5 @@
+palabra = input("Introduce entre 1 y 3 palabras: ")
+longitud = len(palabra)
+print(palabra)
+print(longitud)
+print(palabra[0])
