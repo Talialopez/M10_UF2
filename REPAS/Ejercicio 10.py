@@ -15,4 +15,4 @@ while numero != secreto:
     count += 1
 
 print("¡Felicidades, este es el número!", secreto)
-print("Intentos realizados:", count)
+print("Intentos realizados: ", count)
