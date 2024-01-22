@@ -24,3 +24,8 @@ print("Total area habitaciones: ", totalArea)
 areaLavabo = list(areas_pis.values())
 areaLavabo[4] = 56
 print("Area lavabo modificada", areas_pis)
+
+
+areas_pis["Lavabo"] = 52.0
+for area in areas_pis:
+    print(f"{area}: {areas_pis[area]}")
