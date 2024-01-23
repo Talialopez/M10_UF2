@@ -1,0 +1,32 @@
+<students>
+  <student id="student_1">
+    <name>Nombre_1</name>
+    <surname>Apellido_1</surname>
+    <email>email1@example.com</email>
+    <dni>DNI1</dni>
+  </student>
+  <student id="student_2">
+    <name>Nombre_2</name>
+    <surname>Apellido_2</surname>
+    <email>email2@example.com</email>
+    <dni>DNI2</dni>
+  </student>
+  <student id="student_3">
+    <name>Nombre_3</name>
+    <surname>Apellido_3</surname>
+    <email>email3@example.com</email>
+    <dni>DNI3</dni>
+  </student>
+  <student id="student_4">
+    <name>Nombre_4</name>
+    <surname>Apellido_4</surname>
+    <email>email4@example.com</email>
+    <dni>DNI4</dni>
+  </student>
+  <student id="student_5">
+    <name>Nombre_5</name>
+    <surname>Apellido_5</surname>
+    <email>email5@example.com</email>
+    <dni>DNI5</dni>
+  </student>
+</students>

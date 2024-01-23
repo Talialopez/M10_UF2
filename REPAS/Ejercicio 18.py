@@ -12,7 +12,7 @@ for palabra in tupla:
         else:
             letras[letra] = 1
 
-print("Frecuencia de las letras:")
+print("Repetición de letras:")
 for letra, cantidad in letras.items():
     print(f"{letra}: {cantidad} veces")
 
