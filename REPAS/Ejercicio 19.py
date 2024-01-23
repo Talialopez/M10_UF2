@@ -29,3 +29,4 @@ print("Area lavabo modificada", areas_pis)
 areas_pis["Lavabo"] = 52.0
 for area in areas_pis:
     print(f"{area}: {areas_pis[area]}")
+
