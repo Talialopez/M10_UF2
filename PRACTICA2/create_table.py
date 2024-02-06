@@ -5,7 +5,7 @@ def crear_tabla():
     conn = conexion()
     cursor = conn.cursor()
 
-    sql = '''CREATE TABLE PELICULAS(
+    sql = '''CREATE TABLE IF NOT EXISTS PELICULAS(
                     ID SERIAL PRIMARY KEY,
                     TITULO VARCHAR(255) NOT NULL,
                     ANIO VARCHAR(255) NOT NULL,
