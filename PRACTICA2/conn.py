@@ -1,7 +1,7 @@
 
 import psycopg2
 
-
+#Iniciaciando conexión mediante valores que se ingresaron en pgadmin
 def conexion():
     try:
         conn = psycopg2.connect(
@@ -17,9 +17,9 @@ def conexion():
     except  (Exception, psycopg2.Error) as error:
         print("Error para conectar:", error)
 
-
+#Cerrando conexión
 def cerrar_conexion(conn):
     if conn:
         conn.close()
-        print("Connection closed.")
+        print("Conexion cerrada.")
 

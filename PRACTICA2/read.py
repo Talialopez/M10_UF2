@@ -9,8 +9,11 @@ def leer():
 
         sql = ''' SELECT * FROM PELICULAS '''
         cursor.execute(sql)
+
+        #Capta todos los datos por los que recorre el cursor
         resultado = cursor.fetchall()
 
+        #Bucle para que se imprima por terminal los valores que va recorriendo
         for fila in resultado:
             print(fila)
 
