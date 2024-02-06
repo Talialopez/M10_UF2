@@ -20,7 +20,7 @@
 <br><br>
 
 ## Actualizar pelicula y su comprobación
-![Actualizar pelicula metodo](actualizar.png)
+![Actualizar pelicula metodo](Actualizar.png)
 ![Comprobación actualizar pelicula metodo](Compractualizar.png)
 <br><br>
 
