@@ -1,3 +1,4 @@
+import psycopg2
 from conn import conexion
 
 #Creamos tabla en caso de que no exista.

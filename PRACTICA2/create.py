@@ -1,3 +1,4 @@
+import psycopg2
 from conn import conexion
 
 #Insertamos valores a una tabla gracias a la consulta sql, en caso de error, salta el error programado más adelante

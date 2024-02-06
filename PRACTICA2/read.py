@@ -1,3 +1,4 @@
+import psycopg2
 from conn import conexion
 
 #Se configura recorrer toda la base de datos y leer los valores almacenados
@@ -9,6 +10,9 @@ def leer():
         sql = ''' SELECT * FROM PELICULAS '''
         cursor.execute(sql)
         resultado = cursor.fetchall()
+
+        for fila in resultado:
+            print(fila)
 
         return resultado
     except  (Exception, psycopg2.Error) as error:

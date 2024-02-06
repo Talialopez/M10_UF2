@@ -1,13 +1,14 @@
+import psycopg2
 from conn import conexion
 
 #Se configura eliminar pelicula segun ID
-def eliminar(valores):
+def eliminar(id):
     try:
         conn = conexion()
         cursor = conn.cursor()
 
         sql = '''DELETE FROM PELICULAS WHERE id = %s'''
-        cursor.execute(sql, (valores))
+        cursor.execute(sql, (id,))
 
         conn.commit()
 
