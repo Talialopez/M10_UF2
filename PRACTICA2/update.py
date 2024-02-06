@@ -1,13 +1,18 @@
 # update.py
 from conn import conexion
 
-def actualizar():
-    conn = conexion()
-    cursor = conn.cursor()
+#Se configura actualizar valores
+def actualizar(valores):
+    try:
+        conn = conexion()
+        cursor = conn.cursor()
 
-    sql = '''UPDATE PELICULAS 
-             SET ID = %s, TITULO = %s, ANIO = %s, DIRECTOR = %s, GENERO = %s, PUNTUACION = %s
-             WHERE id = %s'''
+        sql = '''UPDATE PELICULAS 
+                SET ID = %s, TITULO = %s, ANIO = %s, DIRECTOR = %s, GENERO = %s, PUNTUACION = %s
+                WHERE id = %s'''
 
-    conn.commit()
-
+        cursor.execute(sql, (valores))
+        conn.commit()
+        
+    except  (Exception, psycopg2.Error) as error:
+        print("Error para actualizar valores: ", error)

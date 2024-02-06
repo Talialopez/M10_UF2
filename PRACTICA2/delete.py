@@ -1,11 +1,15 @@
 from conn import conexion
 
-def eliminar(valor):
-    conn = conexion()
-    cursor = conn.cursor()
+#Se configura eliminar pelicula segun ID
+def eliminar(valores):
+    try:
+        conn = conexion()
+        cursor = conn.cursor()
 
-    sql = '''DELETE FROM PELICULAS WHERE id = %s'''
-    cursor.execute(sql, (valor,))
+        sql = '''DELETE FROM PELICULAS WHERE id = %s'''
+        cursor.execute(sql, (valores))
 
-    conn.commit()
+        conn.commit()
 
+    except  (Exception, psycopg2.Error) as error:
+        print("Error para eliminar valores:", error)
