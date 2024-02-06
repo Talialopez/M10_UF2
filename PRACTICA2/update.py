@@ -8,7 +8,7 @@ def actualizar(valores):
         cursor = conn.cursor()
 
         sql = '''UPDATE PELICULAS 
-                SET ID = %s, TITULO = %s, ANIO = %s, DIRECTOR = %s, GENERO = %s, PUNTUACION = %s WHERE id = %s'''
+                SET TITULO = %s, ANIO = %s, DIRECTOR = %s, GENERO = %s, PUNTUACION = %s WHERE id = %s'''
 
         cursor.execute(sql, valores)
         conn.commit()
